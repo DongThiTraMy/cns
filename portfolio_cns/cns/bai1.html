@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 1 – Tệp & Thư mục | Portfolio – Đồng Thị Trà My</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="topnav-logo">Portfolio kỹ thuật số</a>
+  <div class="topnav-links">
+    <a href="index.html">Giới thiệu</a>
+    <a href="projects.html" class="active">Dự án</a>
+    <a href="summary.html">Tổng kết</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="sec-label">Bài 1 · Mục 1.4</div>
+  <h1 class="page-title">Thao tác cơ bản với tệp tin và thư mục</h1>
+  <p class="page-desc">Trình bày cấu trúc thư mục tối ưu và quy tắc đặt tên tệp đã thiết lập, kèm minh chứng quy trình 12 bước thực hiện trên Windows 11.</p>
+
+  <div class="card">
+    <div class="card-title">Mục tiêu bài tập</div>
+    <div class="card-body">Thực hành các thao tác cơ bản trong File Explorer của Windows: tạo, đặt tên, đổi tên, sao chép, di chuyển, xóa tệp/thư mục và khôi phục từ Recycle Bin. Mục tiêu là xây dựng thói quen tổ chức dữ liệu khoa học ngay từ đầu.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Cấu trúc thư mục đã tạo</div>
+    <div class="tree">
+      <div><span class="folder">DATA (D:)\</span></div>
+      <div>&nbsp;&nbsp;└── <span class="folder">ThucHanh_DongThiTraMy\</span></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── GhiChuQuanTrong.txt</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="folder">TaiLieu\</span></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── GhiChuQuanTrong.txt <span class="note">← bản sao / khôi phục</span></div>
+    </div>
+    <div style="margin-top:8px">
+      <span class="tag tag-blue">Quy tắc đặt tên: PascalCase_KhongDau</span>
+      <span class="tag tag-green">Không dùng ký tự đặc biệt</span>
+      <span class="tag tag-blue">Tên mô tả nội dung rõ ràng</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">12 bước thực hiện</div>
+    <ul class="steps">
+      <li><div class="step-text"><strong>Mở File Explorer</strong> — Nhấn <code>Windows + E</code> hoặc click biểu tượng thư mục vàng trên Taskbar</div></li>
+      <li><div class="step-text"><strong>Truy cập ổ đĩa</strong> — Chọn <code>This PC</code> → chọn ổ <code>D:</code> (hoặc Documents nếu không có ổ D)</div></li>
+      <li><div class="step-text"><strong>Tạo thư mục gốc</strong> — New → Folder → đặt tên <code>ThucHanh_DongThiTraMy</code> → Enter. Màn hình hiển thị thư mục mới trong danh sách.</div></li>
+      <li><div class="step-text"><strong>Vào thư mục vừa tạo</strong> — Nhấp đúp, màn hình hiển thị "0 items" — thư mục rỗng hoàn toàn</div></li>
+      <li><div class="step-text"><strong>Tạo tệp văn bản</strong> — New → Text Document → đặt tên <code>GhiChu.txt</code> → Enter</div></li>
+      <li><div class="step-text"><strong>Đổi tên tệp</strong> — Chuột phải vào GhiChu.txt → Rename → đổi thành <code>GhiChuQuanTrong.txt</code></div></li>
+      <li><div class="step-text"><strong>Tạo thư mục con</strong> — Chuột phải vào khoảng trống → New → Folder → đặt tên <code>TaiLieu</code></div></li>
+      <li><div class="step-text"><strong>Sao chép tệp (Copy & Paste)</strong> — Chuột phải vào GhiChuQuanTrong.txt → Copy (<code>Ctrl+C</code>) → vào TaiLieu → Paste (<code>Ctrl+V</code>). Tệp gốc vẫn còn ở thư mục cha.</div></li>
+      <li><div class="step-text"><strong>Di chuyển tệp (Cut & Paste)</strong> — Tạo tệp mới <code>DiChuyen.txt</code> → Cut (<code>Ctrl+X</code>) → vào TaiLieu → Paste (<code>Ctrl+V</code>). Tệp biến mất khỏi thư mục gốc.</div></li>
+      <li><div class="step-text"><strong>Xóa vào Recycle Bin</strong> — Chuột phải vào GhiChuQuanTrong.txt trong TaiLieu → Delete. Tệp chuyển vào thùng rác.</div></li>
+      <li><div class="step-text"><strong>Xóa vĩnh viễn</strong> — Chọn DiChuyen.txt → <code>Shift + Delete</code> → chọn Yes. Tệp bị xóa hoàn toàn, không thể khôi phục từ Recycle Bin.</div></li>
+      <li><div class="step-text"><strong>Khôi phục từ Recycle Bin</strong> — Mở Recycle Bin → chuột phải vào GhiChuQuanTrong.txt → Restore. Tệp quay về đúng vị trí ban đầu.</div></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Quy tắc đặt tên áp dụng</div>
+    <ul class="blist">
+      <li><strong>Thư mục gốc:</strong> <code>ThucHanh_HoTenSinhVien</code> — rõ ràng, không dấu, dùng dấu gạch dưới phân tách từ</li>
+      <li><strong>Tệp theo chức năng:</strong> <code>GhiChu.txt</code> → <code>GhiChuQuanTrong.txt</code> — tên mô tả nội dung, dễ nhận biết</li>
+      <li><strong>Thư mục con theo loại:</strong> <code>TaiLieu</code> — phân loại rõ ràng giúp dễ tìm kiếm về sau</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Bài học rút ra</div>
+    <ul class="blist">
+      <li>Phím tắt <span class="tag tag-blue">Ctrl+C</span> <span class="tag tag-blue">Ctrl+X</span> <span class="tag tag-blue">Ctrl+V</span> giúp thao tác nhanh hơn nhiều so với dùng chuột phải từng bước.</li>
+      <li><span class="tag tag-red">Shift+Delete</span> xóa vĩnh viễn — cần rất cẩn thận vì không thể khôi phục bằng Recycle Bin.</li>
+      <li>Cấu trúc thư mục rõ ràng ngay từ đầu giúp tránh lộn xộn khi số lượng file tăng lên trong các học kỳ sau.</li>
+    </ul>
+  </div>
+
+  <div style="display:flex;gap:10px;margin-top:8px">
+    <a href="projects.html" class="btn btn-outline">← Danh sách dự án</a>
+    <a href="bai2.html" class="btn">Bài 2 →</a>
+  </div>
+
+</div>
+
+<footer>Portfolio cá nhân · Đồng Thị Trà My · MSSV 25021899</footer>
+</body>
+</html>
